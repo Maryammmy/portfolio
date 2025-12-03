@@ -3,6 +3,7 @@ import mobile from "./mobile.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import web from "./web.png";
+import github from "./github.png";
 
 import javascript from "./tech/javascript.png";
 import typescript from "./tech/typescript.png";
@@ -33,6 +34,7 @@ export {
   backend,
   creator,
   web,
+  github,
   javascript,
   typescript,
   html,

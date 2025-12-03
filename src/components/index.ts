@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 import About from "./about";
 import Tech from "./tech";
 import Experience from "./experience";
-import Works from "./Works";
+import Works from "./work";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./ui/Loader";

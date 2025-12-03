@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import useNavbar from "../hooks/useNavbar";
 import { navLinks } from "../constants";
 import { useState } from "react";
+import Button from "./ui/Button";
 
 function Navbar() {
   const [active, setActive] = useState<string>("");
@@ -25,16 +26,16 @@ function Navbar() {
             setActive("");
           }}
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
+          {/* <Image
+            imageUrl="https://flowbite.com/docs/images/logo.svg"
             className="h-7"
             alt="Logo"
-          />
+          /> */}
           <span className="text-xl font-semibold">Maryam</span>
         </Link>
 
         {/* Toggle Button */}
-        <button
+        <Button
           onClick={toggleMenu}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-base md:hidden"
@@ -55,7 +56,7 @@ function Navbar() {
               d="M5 7h14M5 12h14M5 17h14"
             />
           </svg>
-        </button>
+        </Button>
 
         {/* Menu */}
         <div

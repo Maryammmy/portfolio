@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed w-full z-20 top-0 start-0 transition-all duration-500 ease-in-out ${
-        isScrolled ? "bg-red-700 shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-primary shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -70,7 +70,7 @@ function Navbar() {
                   duration={600}
                   offset={-80}
                   className={`block py-2 px-3 cursor-pointer hover:text-fg-brand ${
-                    active === title ? "text-red-400 font-bold" : "text-white"
+                    active === title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
                     toggleMenu();

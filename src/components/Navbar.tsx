@@ -1,13 +1,17 @@
 import { Link } from "react-scroll";
 import useNavbar from "../hooks/useNavbar";
 import { navLinks } from "../constants";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Button from "./ui/Button";
+import useClickOutside from "../hooks/useClickOutside";
 
 function Navbar() {
   const [active, setActive] = useState<string>("");
-  const { isOpen, toggleMenu, isScrolled } = useNavbar();
+  const { isOpen, toggleMenu, closeMenu, isScrolled } = useNavbar();
+  const navlinksToggle = useRef<HTMLDivElement>(null);
+  const buttonToggleRef = useRef<HTMLButtonElement>(null);
 
+  useClickOutside(navlinksToggle, closeMenu, buttonToggleRef);
   return (
     <nav
       className={`fixed w-full z-20 top-0 start-0 transition-all duration-500 ease-in-out ${
@@ -36,6 +40,7 @@ function Navbar() {
 
         {/* Toggle Button */}
         <Button
+          ref={buttonToggleRef}
           onClick={toggleMenu}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-base md:hidden"
@@ -60,9 +65,10 @@ function Navbar() {
 
         {/* Menu */}
         <div
+          ref={navlinksToggle}
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-gray-400 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-md bg-tertiary md:flex-row md:space-x-8 md:mt-0 md:bg-transparent">
             {navLinks.map(({ id, title }) => (
               <li key={id}>
                 <Link

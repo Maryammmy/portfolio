@@ -12,7 +12,6 @@ import Experience from "./experience";
 import Works from "./work";
 import Testimonials from "./Testimonials";
 import Contact from "./contact";
-import CanvasLoader from "./ui/Loader";
 
 export {
   Hero,
@@ -23,7 +22,6 @@ export {
   Works,
   Testimonials,
   Contact,
-  CanvasLoader,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

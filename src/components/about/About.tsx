@@ -18,11 +18,12 @@ const About: FC = () => (
       variants={fadeIn("up", "spring", 0.1, 0.1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-      I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and Three.js.
-      I'm a quick learner and collaborate closely with clients to create
-      efficient, scalable, and user-friendly solutions that solve real-world
-      problems. Let's work together to bring your ideas to life!
+      I'm a passionate Frontend Developer with expertise in Next.js, React.js,
+      JavaScript, TypeScript, HTML, and CSS. I create modern, responsive, and
+      user-friendly web applications that bring ideas to life. I’m a quick
+      learner, detail-oriented, and love collaborating with clients to deliver
+      efficient, scalable, and beautiful web solutions. Let’s build something
+      amazing together!
     </motion.p>
 
     <div className="mt-20 flex flex-wrap gap-10">

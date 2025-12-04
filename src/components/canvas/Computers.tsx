@@ -2,7 +2,6 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-
 import CanvasLoader from "../ui/Loader";
 
 interface IProps {

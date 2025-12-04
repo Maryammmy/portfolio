@@ -17,7 +17,7 @@ function Hero() {
             Hi, I’m <span className="text-purple">Maryam</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces and web applications.
+            I build beautiful, modern & user-friendly websites.
           </p>
         </div>
       </div>

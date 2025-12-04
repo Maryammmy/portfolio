@@ -24,9 +24,9 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import shopify from "./company/shopify.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import sherifFaranca from "./sherif-faranca.png";
+import trent from "./trent.png";
+import dubballup from "./dubballup.png";
 
 // Export all
 export {
@@ -52,7 +52,7 @@ export {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  sherifFaranca,
+  trent,
+  dubballup,
 };

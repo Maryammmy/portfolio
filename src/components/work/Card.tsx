@@ -26,7 +26,7 @@ const ProjectCard = ({ project, index }: IProps) => {
           <Image
             imageUrl={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">

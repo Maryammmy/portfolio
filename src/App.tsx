@@ -6,7 +6,6 @@ import {
   Experience,
   Tech,
   Works,
-  Testimonials,
   Contact,
   StarsCanvas,
 } from "./components";
@@ -26,7 +25,7 @@ function App() {
           <Tech />
         </div>
         <Works />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

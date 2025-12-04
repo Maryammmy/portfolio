@@ -19,9 +19,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  sherifFaranca,
+  trent,
+  dubballup,
   threejs,
 } from "../assets";
 import type {
@@ -147,39 +147,39 @@ export const testimonials: Testimonial[] = [
 
 export const projects: Project[] = [
   {
-    name: "Car Rent",
+    name: "Sherif Faranca",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Sherif Faranca is a versatile fitness platform designed to help users achieve their health goals. Users can explore and follow full workout routines, access video demonstrations for every exercise and track their progress.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "mongodb", color: "green-text-gradient" },
       { name: "tailwind", color: "pink-text-gradient" },
     ],
-    image: carrent,
+    image: sherifFaranca,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Trent",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Trent is a property rental platform. It allows users to browse listings, view details, and book accommodations easily. Hosts can manage their properties and reservations through a dedicated dashboard.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "restapi", color: "green-text-gradient" },
       { name: "scss", color: "pink-text-gradient" },
     ],
-    image: jobit,
+    image: trent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Dubballup",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Dubballup is a versatile online platform designed to connect individuals with shared interests and schedule meetings with coaches. Users can find and join events, track their performance, and engage with a community that shares their passions.",
     tags: [
       { name: "nextjs", color: "blue-text-gradient" },
       { name: "supabase", color: "green-text-gradient" },
       { name: "css", color: "pink-text-gradient" },
     ],
-    image: tripguide,
+    image: dubballup,
     source_code_link: "https://github.com/",
   },
 ];

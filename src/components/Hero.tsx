@@ -1,4 +1,6 @@
+// import { code } from "../assets";
 import { styles } from "../styles";
+// import Image from "./ui/Image";
 import { ComputersCanvas } from "./canvas";
 import ScrollIndicator from "./ui/ScrollIndicator";
 
@@ -21,6 +23,13 @@ function Hero() {
           </p>
         </div>
       </div>
+      {/* <div className="absolute w-1/2 h-96 top-[40%] left-1/4 rounded-2xl overflow-hidden">
+        <Image
+          imageUrl={code}
+          alt="Javascript Code"
+          className="w-full h-full"
+        />
+      </div> */}
       <ComputersCanvas />
       <ScrollIndicator />
     </section>

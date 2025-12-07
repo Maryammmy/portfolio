@@ -42,9 +42,9 @@ export const navLinks: NavLink[] = [
 
 export const services: Service[] = [
   { title: "Web Developer", icon: web },
-  { title: "React Native Developer", icon: mobile },
-  { title: "Backend Developer", icon: backend },
-  { title: "Content Creator", icon: creator },
+  { title: "React.js Developer", icon: mobile },
+  { title: "Next.js Developer", icon: backend },
+  { title: "Javascript Developer", icon: creator },
 ];
 
 export const technologies: Technology[] = [

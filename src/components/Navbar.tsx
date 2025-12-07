@@ -4,6 +4,7 @@ import { navLinks } from "../constants";
 import { useRef, useState } from "react";
 import Button from "./ui/Button";
 import useClickOutside from "../hooks/useClickOutside";
+import Image from "./ui/Image";
 
 function Navbar() {
   const [active, setActive] = useState<string>("");
@@ -30,12 +31,7 @@ function Navbar() {
             setActive("");
           }}
         >
-          {/* <Image
-            imageUrl="https://flowbite.com/docs/images/logo.svg"
-            className="h-7"
-            alt="Logo"
-          /> */}
-          <span className="text-xl font-semibold">Maryam</span>
+          <Image imageUrl="./logo.png" className="h-13" alt="Logo" />
         </Link>
 
         {/* Toggle Button */}

@@ -153,7 +153,7 @@ export const projects: Project[] = [
       "Trent is a property rental platform. It allows users to browse listings, view details, and book accommodations easily. Hosts can manage their properties and reservations through a dedicated dashboard.",
     tags: [
       { name: "react.js", color: "blue-text-gradient" },
-      { name: "react router", color: "green-text-gradient" },
+      { name: "react router dom", color: "green-text-gradient" },
       { name: "tailwindcss", color: "pink-text-gradient" },
     ],
     image: trent,

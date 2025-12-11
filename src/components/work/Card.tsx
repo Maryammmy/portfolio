@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
 import { Tilt } from "react-tilt";
 import type { Project } from "../../interfaces/constants";
-import { github } from "../../assets";
 import Image from "../ui/Image";
 
 interface IProps {
@@ -13,7 +12,11 @@ interface IProps {
 const ProjectCard = ({ project, index }: IProps) => {
   const { name, description, tags, image, source_code_link } = project;
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.a
+      href={source_code_link}
+      target="_blank"
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
       <Tilt
         options={{
           max: 45,
@@ -29,7 +32,7 @@ const ProjectCard = ({ project, index }: IProps) => {
             className="w-full h-full rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -40,7 +43,7 @@ const ProjectCard = ({ project, index }: IProps) => {
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-5">
@@ -59,7 +62,7 @@ const ProjectCard = ({ project, index }: IProps) => {
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </motion.a>
   );
 };
 export default ProjectCard;

@@ -1,5 +1,6 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import type { Experience } from "../../interfaces/constants";
+import Image from "../ui/Image";
 
 interface IProps {
   experience: Experience;
@@ -15,11 +16,11 @@ const ExperienceCard = ({ experience }: IProps) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={experience.icon}
+        <div className="flex justify-center items-center w-full h-full rounded-full overflow-hidden">
+          <Image
+            imageUrl={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-full h-full"
           />
         </div>
       }

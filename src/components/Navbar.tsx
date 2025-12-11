@@ -39,24 +39,42 @@ function Navbar() {
           ref={buttonToggleRef}
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-base md:hidden"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-base md:hidden transition-all"
         >
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width={24}
-            height={24}
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
+          {isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeWidth={2}
-              d="M5 7h14M5 12h14M5 17h14"
-            />
-          </svg>
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          ) : (
+            <svg
+              className="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeWidth={2}
+                d="M5 7h14M5 12h14M5 17h14"
+              />
+            </svg>
+          )}
         </Button>
 
         {/* Menu */}

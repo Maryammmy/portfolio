@@ -10,20 +10,19 @@ import javascript from "./tech/javascript.png";
 import typescript from "./tech/typescript.png";
 import html from "./tech/html.png";
 import css from "./tech/css.png";
+import nextjs from "./tech/nextjs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import reactQuery from "./tech/react-query.png";
+import bootstrap from "./tech/bootstrap.png";
 import tailwind from "./tech/tailwind.png";
-import nodejs from "./tech/nodejs.png";
-import mongodb from "./tech/mongodb.png";
+import framerMotion from "./tech/framer-motion.jpeg";
 import git from "./tech/git.png";
 import figma from "./tech/figma.png";
-import docker from "./tech/docker.png";
-import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import shopify from "./company/shopify.png";
+import catalyst from "./company/catalyst.jpeg";
+import miatech from "./company/miatech.pro.jpeg";
+import freelance from "./company/freelance.webp";
 
 import sherifFaranca from "./sherif-faranca.png";
 import trent from "./trent.png";
@@ -41,19 +40,18 @@ export {
   typescript,
   html,
   css,
+  nextjs,
   reactjs,
   redux,
+  reactQuery,
+  bootstrap,
   tailwind,
-  nodejs,
-  mongodb,
+  framerMotion,
   git,
   figma,
-  docker,
-  threejs,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  catalyst,
+  miatech,
+  freelance,
   sherifFaranca,
   trent,
   dubballup,
